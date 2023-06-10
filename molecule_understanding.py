@@ -178,7 +178,7 @@ def main(args):
                 if global_step>args.global_step:
                     return
                 # do_eval
-                if global_step % int(1750*args.few) == 0:#700 1750
+                if global_step % int(args.eval_len*args.few) == 0:#700 1750
                     if global_step>args.step_pre:
                         evs = do_eval(model, dev_dataloader, tokenizer, args.pth_out, args.tag)
                         model.train()
@@ -212,6 +212,7 @@ def parse_args(parser=argparse.ArgumentParser()):
     parser.add_argument("--pth_dev", default='data/validation.txt', type=str,)
     parser.add_argument("--pth_test", default='data/test.txt', type=str,)
     parser.add_argument("--pth_out", default='log/mol_pre_base_M2T.txt', type=str,)
+    parser.add_argument("--eval_len", default=1750, type=int,)
     parser.add_argument("--batch_size", default=16, type=int,)
     parser.add_argument("--epoch", default=50, type=int,)
     parser.add_argument("--seed", default=1111, type=int,)
