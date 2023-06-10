@@ -189,7 +189,10 @@ def main(args):
                 
                 if global_step % 5000 == 0:  
                     if global_step > args.step_pre:
-                    torch.save(model, args.save_pth + str(global_step) + '.pt')
+                        acc = do_eval(tokenizer, model, dev_dataloader)
+                        if acc>best_acc:
+                            best_acc = acc
+                            torch.save(model, args.save_pth + str(global_step) + '.pt')
 
 
 def parse_args(parser=argparse.ArgumentParser()):
