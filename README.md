@@ -44,7 +44,7 @@ cd evaluation/
 python test.py --init_checkpoint ../save_model/generation_noplug_100000.pt
 ```
 
-You can also download the reference checkpoint from our [Google Drive](link) and put them under `save_model/`. Run the `demo.py` and provide your input according to the hints:
+You can also download the reference checkpoint from our [Google Drive](https://drive.google.com/drive/folders/1I-LcBE0emj8p1W6WFCbEYajTADGN1RuC?usp=sharing) and put them under `save_model/`. Run the `demo.py` and provide your input according to the hints:
 ```
 Input 'describe' to trigger molecule understanding of the current molecule, otherwise to use molecule generation. Input 'END' to clear dialog memory.
 user: It derives from a tryptamine.
