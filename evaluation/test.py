@@ -173,7 +173,7 @@ def main(args):
 
 
 def parse_args(parser=argparse.ArgumentParser()):
-    parser.add_argument("--test_path", default='prebase', type=str, )
+    parser.add_argument("--pth", default='prebase', type=str, )
     parser.add_argument("--init_checkpoint", default='../save_model/dia_pre_base.pt', type=int,)
     args = parser.parse_args()
     return args
