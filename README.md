@@ -1,6 +1,6 @@
 # ChatMol
 
-Code and data for [Interactive Molecular Discovery with Natural Language](https://arxiv.org/abs/2306.11976). Related operation guides will be gradually improved in the near future.
+Code and data for [Interactive Molecular Discovery with Natural Language]([https://arxiv.org/abs/2306.11976](https://academic.oup.com/bioinformatics/article/40/9/btae534/7747661)). Related operation guides will be gradually improved in the near future.
 
 ## Requirement
 Main packages:
